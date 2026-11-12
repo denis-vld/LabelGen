@@ -1,0 +1,11 @@
+Original source files, downloaded from github, was modified, to successfully compile and to maintain functionality of program LabelGen.
+
+List of changes:
+1. Has added file "./libxls/include/libxls/config.h"
+2. Has renamed file "./libxls/include/libxls/locale.h" in "./libxls/include/libxls/libxls_locale.h"
+   Has changed appropriate includes in *.c files
+3. Has changed some functions in "./libxls/XlsReader.cpp" and "./libxls/XlsReader.h" to
+   change enumeration of rows and columns from start-1 to start-0;
+4. Has added some functions in "./libxls/XlsReader.cpp" and "./libxls/XlsReader.h" to
+   1) recognize of date/time Excel formats;
+   2) add formatting out string as date/time if corresponding format is recognized
